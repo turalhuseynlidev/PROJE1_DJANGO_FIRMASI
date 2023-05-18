@@ -7,16 +7,7 @@
             <img src="https://picsum.photos/id/49/1200/450" alt="" class="w-100">
         </div>
     </div>
-    <div class="row bg-dark p-4 ">
-        <div class="col-sm-8 offset-sm-2">
-            <div class="h-100 p-5 bg-light border rounded-3">
-                <h2 class="text-center display-1">Contact with Us {{ request.path }} </h2>
-                <p class="text-center">Or, keep it light and add a border for some added definition to the
-                    boundaries of your content. Be sure to look under the hood at the source HTML here as we've
-                    adjusted the alignment and sizing of both column's content for equal-height.</p>
-            </div>
-        </div>
-    </div>
+   {% include 'core/components/hero_component.html' %}
 </div>
 {% endblock container-fluid %}
 
