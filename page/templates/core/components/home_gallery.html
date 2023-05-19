@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h2>Gallery</h2>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    {% for gallery_item in FAKE_DB_GALLERY %}
+    <div class="col-sm-4 mb-2">
+        <div class="card">
+            <img src="{{ gallery_item }}" class="card-img-top" alt="...">
+            <div class="card-body ">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                <a href="#" class="btn btn-primary me-md-2">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

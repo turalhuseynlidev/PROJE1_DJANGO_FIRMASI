@@ -8,25 +8,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/'%}active{% endif %} " aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link {% if request.path == '/'%}active{% endif %} " aria-current="page"
+                        href="{% url 'home' %}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/hakkimizda/'%}active{% endif %}" href="{%  url 'about_us' %}">About</a>
+                    <a class="nav-link {% if request.path == '/hakkimizda/'%}active{% endif %}"
+                        href="/hakkimizda/">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/iletisim/'%}active{% endif %}" href="{%  url 'contact_us' %}">Contact</a>
+                    <a class="nav-link {% if request.path == '/iletisim/'%}active{% endif %}"
+                        href="/iletisim/">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/vizyonumuz/'%}active{% endif %}" href="{%  url 'vision' %}">Visions</a>
+                    <a class="nav-link {% if request.path == '/vizyonumuz/'%}active{% endif %}"
+                        href="/vizyonumuz/">Visions</a>
                 </li>
+              
                 <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/testpage/aga/'%}active{% endif %}" href="{%  url 'testpage' %}">testpage</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/staff/aghamir_aghamirli/'%}active{% endif %}" href="{%  url 'agamirli' %}">Agamirli</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.path == '/staff/tural_huseynli/'%}active{% endif %}" href="{%  url 'tural' %}">tural</a>
+                    <a class="nav-link {% if request.path == '/staff/aghamir_aghamirli/'%}active{% endif %}"
+                        href="/staff/aghamir_aghamirli/">Agamirli</a>
                 </li>
 
             </ul>
