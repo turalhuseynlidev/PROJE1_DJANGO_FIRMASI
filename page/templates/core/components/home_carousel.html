@@ -10,8 +10,8 @@
             aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
-        {% for car_item in FAKE_DB_CAROUSEL %}
-        <div class="carousel-item {% if forloop.first %} active {% endif %}">
+        {% for car_item in HOMEPAGE_FAKE_DB_CAROUSEL %}
+        <div class="carousel-item {% if forloop.first %} active {% endif %}"> <!-- forloop first istifade edilib ona gore ki FIRST carusel seklini aktiv esas sekil kimi saxlasin-->
             <img src="{{ car_item }}" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>

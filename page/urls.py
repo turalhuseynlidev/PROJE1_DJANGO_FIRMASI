@@ -7,7 +7,7 @@ from .views import (
     # test_page,
     # #agamirli,
     page_view,
-    page_view_staff
+    #page_view_staff
 )
 
 
@@ -19,6 +19,6 @@ urlpatterns = [
     # path('testpage/aga/', test_page, name='testpage'),
     # #path('staff/aghamir_aghamirli/', agamirli, name='agamirli'),
     path('<slug:slug>/', page_view),
-    path('staff/<slug:slug>/', page_view_staff),
+    path('staff/<slug:slug>/', page_view),
     #path('staff/<slug:slug>/', page_view),
 ]
