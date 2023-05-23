@@ -16,6 +16,10 @@
                         href="/hakkimizda/">About</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/products/'%}active{% endif %}"
+                        href="/products/">Products</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link {% if request.path == '/iletisim/'%}active{% endif %}"
                         href="/iletisim/">Contact</a>
                 </li>

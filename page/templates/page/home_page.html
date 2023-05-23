@@ -35,5 +35,49 @@
 {% endblock container-fluid %}
 {% block container %}
 <!-- ========== Gallery Start ========== -->
-{% include 'core/components/home_gallery.html' %}
+<div class="container">
+    <!-- ========== Products Start ========== -->
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Gallery</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-4 mb-2">
+            <div class="card">
+                <img src="https://picsum.photos/id/542/400/250" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary me-md-2">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mb-2">
+            <div class="card">
+                <img src="https://picsum.photos/id/239/400/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 mb-2">
+            <div class="card">
+                <img src="https://picsum.photos/id/238/400/250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 {% endblock container %}

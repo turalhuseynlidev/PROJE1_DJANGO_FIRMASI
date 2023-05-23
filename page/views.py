@@ -9,17 +9,14 @@ FAKE_DB_PROJECTS = [
 HOMEPAGE_FAKE_DB_CAROUSEL = [
     f"https://picsum.photos/id/{id}/1200/500" for id in range(41, 45)
 ]
-HOMEPAGE_FAKE_DB_GALLERY = [
-    f"https://picsum.photos/id/{id}/400/250" for id in range(56, 59)
-]
+
 
 # Create your views here.
 def home_view(request):
     # print(request.META)
     context = dict(
-        FAKE_DB_PROJECTS=FAKE_DB_PROJECTS,
+       # FAKE_DB_PROJECTS=FAKE_DB_PROJECTS,
         HOMEPAGE_FAKE_DB_CAROUSEL=HOMEPAGE_FAKE_DB_CAROUSEL,
-        HOMEPAGE_FAKE_DB_GALLERY=HOMEPAGE_FAKE_DB_GALLERY,
     )
     return render(request, "page/home_page.html", context)
 
@@ -27,7 +24,7 @@ def page_view(request, slug):
     result = list(filter(lambda x: (x['url'] == slug), FAKE_DB_PAGES))
     if result:
         context = dict(
-            FAKE_DB_PROJECTS=FAKE_DB_PROJECTS,
+           # FAKE_DB_PROJECTS=FAKE_DB_PROJECTS,
             page_title=result[0]['title'],
             detail=result[0]['detail'],
         )
